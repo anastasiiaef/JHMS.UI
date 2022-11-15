@@ -1,0 +1,108 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" routerLink="https://jhms.link">
+          <img
+            src="https://user-images.githubusercontent.com/79421698/196301027-6eef97b8-6cee-4922-8db3-fbac4f19f501.png"
+            height="200"
+            width="200"
+            alt="JHMS Logo"
+            loading="lazy"
+          />
+        </a>
+
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="Home">Home</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="Inventory">Inventory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="Event">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="Sales">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="ViewInflatables">ViewInflatables</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="Customers">Manage Customers</a>
+          </li>
+          <li>
+            <button class='mat-raised-button' (click)="fetchPosts()">Click Here!</button>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+
+      <button  (click) ="logout()">Logout</button>
+        
+      <!--
+      <img
+      src="https://user-images.githubusercontent.com/79421698/196301027-6eef97b8-6cee-4922-8db3-fbac4f19f501.png"
+      height="200"
+      width="200"
+      alt="JHMS Logo"
+      loading="lazy"
+    /> -->
+
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            routerLink="Home"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://img.icons8.com/ios/344/settings--v1.png"
+              class="rounded-circle"
+              height="30"
+              width="30"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
